@@ -1,0 +1,7 @@
+#Calculo de terminos por separado
+def horner(coefs, x):
+    ac = 0
+    for i, a in enumerate(coefs):
+        ac += (x ** i) * a
+    return ac
+print(horner((-19,7,-4,6),3))
